@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dra. Rafaela · Versão Editorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Manrope:wght@400;500;700&display=swap">
+<style>
+body{margin:0}img{max-width:100%}
+/* Layout: editorial escuro em tons de café (a blusa dela) com marfim (o blazer) e esmeralda (os brincos); nome em Bodoni grande sobreposto ao retrato */
+:root{
+  --bg:#231915; --surface:#2E221D; --ink:#F3ECE3; --muted:#C2B3A6;
+  --ivory:#EFE6D8; --emerald:#3E9C78; --line:#463630; --on-em:#0F1F18;
+  --display:"Bodoni Moda", "Didot", "Times New Roman", serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance}
+p{margin:0}
+.label{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--emerald);color:var(--on-em);text-decoration:none;font-weight:700;padding:1em 1.6em;border-radius:2px;letter-spacing:.02em;transition:background .2s,transform .2s}
+.btn:hover{background:#4DB38B;transform:translateY(-2px)}
+.btn:focus-visible{outline:2px solid var(--ivory);outline-offset:3px}
+.btn svg{width:1.2em;height:1.2em;fill:currentColor}
+.ghost{color:var(--ivory);text-decoration:underline;text-underline-offset:5px;font-weight:500}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:0;padding-block:28px 0;min-height:0}
+.hero .text{padding-block:40px 64px;position:relative;z-index:2;min-width:0}
+.hero h1{font-size:clamp(3.4rem,8.5vw,7.4rem);line-height:.9;letter-spacing:-.01em;margin:18px 0 0;margin-right:-22%}
+.hero h1 i{display:block;color:var(--ivory)}
+.hero .sub{font-family:var(--display);font-style:italic;font-size:clamp(1.25rem,2vw,1.6rem);color:var(--muted);margin:26px 0 30px;max-width:24ch}
+.hero .actions{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center}
+.hero figure{margin:0;align-self:stretch}
+.hero img{display:block;width:100%;height:100%;max-height:760px;object-fit:cover;object-position:50% 15%;filter:saturate(.9)}
+.manifest{padding-block:110px 90px;border-bottom:1px solid var(--line)}
+.manifest blockquote{margin:0;font-family:var(--display);font-size:clamp(1.9rem,3.8vw,3.1rem);line-height:1.18;max-width:24ch}
+.manifest blockquote em{color:var(--emerald);font-style:italic}
+.manifest p{color:var(--muted);max-width:52ch;margin-top:28px}
+.pillars{padding-block:90px}
+.pillars header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:end;margin-bottom:44px}
+.pillars h2{font-size:clamp(2.2rem,4.4vw,3.4rem);max-width:16ch}
+.pillars header p{color:var(--muted);max-width:38ch}
+.list{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line)}
+.list div{padding:26px 22px 8px 0;border-right:1px solid var(--line);min-width:0}
+.list div:last-child{border-right:0}
+.list div+div{padding-left:22px}
+.list h3{font-size:1.6rem;font-style:italic;margin-bottom:10px;color:var(--ivory)}
+.list p{color:var(--muted);font-size:.95rem}
+.split{background:var(--surface)}
+.split .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;padding-block:90px}
+.split img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%}
+.split h2{font-size:clamp(2rem,4vw,3rem);margin:14px 0 24px}
+.split ul{list-style:none;margin:0 0 32px;padding:0;display:grid;gap:0}
+.split li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:16px}
+.split li span{color:var(--emerald);font-family:var(--display);font-style:italic}
+.faq{padding-block:90px;max-width:820px}
+.faq h2{font-size:clamp(2rem,4vw,3rem);margin:14px 0 30px}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-family:var(--display);font-size:1.5rem;line-height:1;color:var(--emerald)}
+details[open] summary::after{content:"–"}
+summary:focus-visible{outline:2px solid var(--emerald);outline-offset:4px}
+details p{color:var(--muted);margin-top:10px;max-width:62ch}
+.final{background:var(--ivory);color:#231915}
+.final .wrap{padding-block:90px;display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center}
+.final h2{font-size:clamp(2.2rem,5vw,3.8rem);max-width:15ch;color:#231915}
+footer{padding-block:28px 100px;font-size:.84rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;background:var(--emerald);color:var(--on-em);text-decoration:none;font-weight:700;padding:14px 18px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(0,0,0,.6);z-index:20}
+.float svg{width:22px;height:22px;fill:currentColor}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .hero figure{order:-1;max-height:560px;overflow:hidden}
+  .hero h1{margin-right:0}
+  .hero .text{padding-block:28px 56px}
+  .list{grid-template-columns:1fr}
+  .list div,.list div+div{border-right:0;border-bottom:1px solid var(--line);padding:20px 0}
+  .split .wrap{grid-template-columns:1fr;gap:36px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1 span,.hero h1 i{animation:in .9s cubic-bezier(.2,.7,.2,1) both}
+  .hero h1 i{animation-delay:.12s}
+  @keyframes in{from{transform:translateY(.25em)}to{transform:none}}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.04c-.24.69-1.42 1.32-1.96 1.37-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.1-1.47-1.1-2.81s.7-2 .95-2.27c.25-.27.54-.34.72-.34h.52c.17 0 .4-.06.62.47.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.18 1.53 1.91 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.8.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.35Z"/></symbol></svg>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="text">
+      <p class="label">Prevenção e Nutrologia · Blumenau/SC</p>
+      <h1><span>Dra.</span><i>Rafaela</i></h1>
+      <p class="sub">Medicina feita com tempo, escuta e ciência para você viver bem por muitos anos.</p>
+      <div class="actions">
+        <a class="btn" id="cta-hero" href="https://wa.me/5547999843211?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Rafaela." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar consulta</a>
+        <a class="ghost" href="#pilares">Conheça a abordagem</a>
+      </div>
+    </div>
+    <figure><img src="img/cadeira.jpg" alt="Retrato da Dra. Rafaela Tridapalli de blazer marfim, apoiada no encosto de uma cadeira de madeira" width="900" height="1231"></figure>
+  </section>
+</div>
+
+<section class="wrap manifest">
+  <p class="label" style="margin-bottom:22px">A abordagem</p>
+  <blockquote>Saúde não se resolve em dez minutos. Ela se constrói <em>com acompanhamento</em>, consulta após consulta.</blockquote>
+  <p>A nutrologia olha para como o seu corpo usa os nutrientes e para os hábitos que sustentam a sua saúde. A Dra. Rafaela une essa visão à medicina preventiva para acompanhar você de forma contínua, com exames e metas revistos a cada retorno.</p>
+</section>
+
+<section class="wrap pillars" id="pilares">
+  <header>
+    <h2>Os cinco pilares do cuidado</h2>
+    <p>Cada plano considera o conjunto da sua rotina, e não um ponto isolado.</p>
+  </header>
+  <div class="list">
+    <div><h3>Alimentação</h3><p>Orientação médica sobre nutrientes e deficiências.</p></div>
+    <div><h3>Movimento</h3><p>Atividade física ajustada à sua fase de vida.</p></div>
+    <div><h3>Sono</h3><p>Descanso como parte do tratamento.</p></div>
+    <div><h3>Estresse</h3><p>Rotina e saúde mental no mesmo olhar.</p></div>
+    <div><h3>Conexão</h3><p>Vínculos sociais também protegem a saúde.</p></div>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap">
+    <img src="img/bracos.jpg" alt="Dra. Rafaela de braços cruzados no consultório, com vista da cidade pela janela" loading="lazy" width="854" height="1280">
+    <div>
+      <p class="label">No consultório</p>
+      <h2>O que você encontra na consulta</h2>
+      <ul>
+        <li><span>i.</span>Escuta detalhada da sua história e da sua rotina</li>
+        <li><span>ii.</span>Check-up preventivo e interpretação de exames</li>
+        <li><span>iii.</span>Avaliação de composição corporal por bioimpedância</li>
+        <li><span>iv.</span>Acompanhamento médico de peso e metabolismo</li>
+        <li><span>v.</span>Retornos para ajustar o plano com você</li>
+      </ul>
+      <a class="btn" id="cta-meio" href="https://wa.me/5547999843211?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Rafaela." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Falar com a clínica</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap faq">
+  <p class="label">Dúvidas frequentes</p>
+  <h2>Antes de agendar</h2>
+  <details><summary>O que faz um médico nutrólogo?</summary><p>É o médico que avalia e trata condições ligadas à nutrição: deficiências de vitaminas e minerais, excesso de peso, alterações metabólicas e a relação entre alimentação e doenças.</p></details>
+  <details><summary>Preciso levar exames na primeira consulta?</summary><p>Se você tiver exames recentes, traga. Caso contrário, a Dra. Rafaela solicita o que for necessário depois da avaliação.</p></details>
+  <details><summary>A consulta inclui bioimpedância?</summary><p>A equipe da clínica informa pelo WhatsApp como funciona a avaliação de composição corporal e os valores.</p></details>
+  <details><summary>Como faço para agendar?</summary><p>Toque em qualquer botão desta página. Você fala direto com a equipe da clínica pelo WhatsApp.</p></details>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Comece pelo primeiro passo.</h2>
+    <a class="btn" id="cta-final" href="https://wa.me/5547999843211?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Rafaela." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Agendar pelo WhatsApp</a>
+  </div>
+</section>
+
+<div class="wrap"><footer>
+  <span>Dra. Rafaela Tridapalli · CRM/SC 00000 · RQE 00000</span>
+  <span>Blumenau/SC · WhatsApp (47) 99984-3211</span>
+</footer></div>
+
+<a class="float" id="cta-float" href="https://wa.me/5547999843211?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Rafaela." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg><use href="#wa"/></svg>Agendar</a>
+</body>
+</html>
