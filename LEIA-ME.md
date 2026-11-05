@@ -4,7 +4,7 @@ Páginas estáticas (HTML + CSS puros, sem build). Abra qualquer .html no navega
 
 | Arquivo | Versão | Fotos usadas |
 |---|---|---|
-| v1-janela.html | Clara, verde-sálvia e dourado, foto na janela | img/janela.jpg, img/consulta.jpg |
+| index.html (antiga v1-janela) | Clara, verde-sálvia e dourado, foto na janela | img/janela.jpg, img/consulta.jpg |
 | v2-cafe.html | Editorial escura, café e marfim | img/cadeira.jpg, img/bracos.jpg |
 | v3-medida.html | "Precisão", foco na bioimpedância InBody | img/inbody.jpg, img/inbody2.jpg |
 
